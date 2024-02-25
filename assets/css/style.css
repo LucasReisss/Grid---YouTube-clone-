@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    text-decoration: none;
+    color: #000000;
+}
+
+body {
+    background: #F9F9F9;
+}
+
+.wrapper {
+    display: grid;
+    font-family: "Roboto", sans-serif;
+    grid-template-columns: auto 4fr;
+    grid-template-areas: 
+    "header header"
+    "sidebar content";
+    background: #F9F9F9;;
+}
+
+header {
+    grid-area: header;
+    height: 3.5rem;
+}
+
+.side {
+    grid-area: sidebar;
+}
+
+.content {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    background: #F9F9F9;
+    padding: 20px;
+}
+
+header {
+    background-color: #FFFFFF;
+    padding: 8px 24px 0px 24px;
+}
+
+header > .main-nav {
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-nav > .left > ul {
+    display: flex;
+    align-items: center;
+}
+
+.main-nav > .left > ul > li {
+    padding-right: 16px;
+}
+
+.main-nav > .center {
+   display: flex;
+   justify-content: center;
+
+}
+
+.main-nav > .center > input {
+    margin-right: -3px;
+    width: 21.75rem;
+    height: 2.5rem;
+
+}
+.main-nav > .center > button {
+    width: 3.5625rem;
+    height: 2.9rem;
+
+}
+
+.main-nav > .right > ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main-nav > .right > ul > li {
+    padding-right: 16px;
+}
+
+.side {
+    background-color: #FFFFFF;
+    min-width: 218px;
+}
+
+.side > ul {
+    margin: 1.5rem;
+}
+
+.side > ul > li {
+    margin-bottom: 1.38rem;
+    font-size: 14px;
+}
+
+.side > ul > li > a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.side > ul > li > .inicio {
+    font-weight: 700;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin: 16px;
+}
+
+.video > .video-detais{
+    display: flex;
+    flex-direction: row;
+    padding-top: 16px;
+    gap: 16px;
+}
+
+.video > .video-detais > img{
+    width: 42px;
+    height: 42px;
+}
+
+.video > .video-detais > .details > h6{
+    font-weight:600;
+    font-size: 14px;
+}
+
+.video > .video-detais > .details > p{
+    font-size: 12px;
+    padding-top: 8px;
+}
